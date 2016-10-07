@@ -50,7 +50,7 @@ http://localhost:8080/otcookbook/getConnectionDetails?username=test&volume=test
     "connectionString": "test",
     "extendedProperties": "test"
   }
-]
+]`
 
 ## Contributors
 
