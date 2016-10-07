@@ -8,20 +8,6 @@ This is a spring boot application built to hold a growing collection of servlets
 ![alt tag](https://github.com/kclark-jenkins/OTCookbook/blob/master/Screenshots/swag3.png)
 ![alt tag](https://github.com/kclark-jenkins/OTCookbook/blob/master/Screenshots/swag4.png)
 
-## Code Example
-
-http://{HOSTNAME}:8080/DynCon/saveOrUpdate/volumeName/userName/connectionURL/someextrastuff
-
-Expected output:
-
-`{result: 'success'}`
-
-http://{HOSTNAME}:8080/DynCon/getConnection/volumeName/userName
-
-Expected output:
-
-`[{"volume":"volumeName","connectionstring":"jdbc:mysql:%252%252localhost:3306%252mydatabase","extendedconnectionproperties":"someextrastuff","id":23,"username":"userName"}]`
-
 ## Installation
 
 java -jar -Dserver.port=8080 OTCookbook-0.0.1-SNAPSHOT.jar
