@@ -3,10 +3,10 @@
 This is a spring boot application built to hold a growing collection of servlets I use with the iHub.
 
 ## Screenshots
-![alt tag](http://url/to/img.png)
-![alt tag](http://url/to/img.png)
-![alt tag](http://url/to/img.png)
-![alt tag](http://url/to/img.png)
+![alt tag](https://github.com/kclark-jenkins/OTCookbook/blob/master/Screenshots/swag1.png)
+![alt tag](https://github.com/kclark-jenkins/OTCookbook/blob/master/Screenshots/swag1.png)
+![alt tag](https://github.com/kclark-jenkins/OTCookbook/blob/master/Screenshots/swag1.png)
+![alt tag](https://github.com/kclark-jenkins/OTCookbook/blob/master/Screenshots/swag1.png)
 
 ## Code Example
 
