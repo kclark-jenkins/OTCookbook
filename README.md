@@ -92,3 +92,5 @@ When compiled to a WAR, this will deploy fine to Tomcat 7.  If you would like to
 Kristopher Clark
 
 ## License
+
+[MIT License](https://github.com/kclark-jenkins/OTCookbook/blob/master/LICENSE)
