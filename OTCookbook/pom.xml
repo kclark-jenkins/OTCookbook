@@ -3,11 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>OTCookbook</groupId>
 	<artifactId>OTCookbook</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1a-${maven.build.timestamp}-SNAPSHOT</version>
 
 	<packaging>war</packaging>
 
 	<properties>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>yyyy-MM-dd HHmm</maven.build.timestamp.format>
 		<start-class>org.krisbox.cookbook.Application</start-class>
 	</properties>
 
@@ -67,6 +69,14 @@
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -84,6 +94,19 @@
 					<execution>
 						<goals>
 							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>make-a-jar</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
