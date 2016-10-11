@@ -63,8 +63,7 @@ When compiled to a WAR, this will deploy fine to Tomcat 7.  If you would like to
 5. Navigate to C:\OpenText\InformationHub\modules\BIRTiHub\iHub\web\webapps\otcookbook\WEB-INF
 6. Create a new web.xml with the following
 
-`
-<?xml version="1.0" encoding="ISO-8859-1"?>
+`<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!DOCTYPE web-app
     PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
@@ -80,8 +79,7 @@ When compiled to a WAR, this will deploy fine to Tomcat 7.  If you would like to
     </servlet-class>
   </servlet>
 
-  </web-app>
-`
+  </web-app>`
 
 7. Open a browser and navigate to http://localhost:8700/otcookbook
 
