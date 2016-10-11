@@ -14,7 +14,7 @@ java -jar -Dserver.port=8080 OTCookbook-0.0.1-SNAPSHOT.jar
 
 ## Usage
 
-http://localhost:8080/otcookbook
+`http://localhost:8080/otcookbook`
 
 ## Endpoints currently implemented
 
@@ -22,7 +22,7 @@ http://localhost:8080/otcookbook
 
 #### Usage
 
-http://localhost:8080/otcookbook/saveConnectionDetails?username=test&volume=test&connectionString=test&extendedProperties=test
+`http://localhost:8080/otcookbook/saveConnectionDetails?username=test&volume=test&connectionString=test&extendedProperties=test`
 
 #### Output
 
@@ -37,7 +37,7 @@ http://localhost:8080/otcookbook/saveConnectionDetails?username=test&volume=test
 
 #### Usage
 
-http://localhost:8080/otcookbook/getConnectionDetails?username=test&volume=test
+`http://localhost:8080/otcookbook/getConnectionDetails?username=test&volume=test`
 
 #### Output
 
