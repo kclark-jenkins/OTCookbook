@@ -41,7 +41,7 @@ http://localhost:8080/otcookbook/getConnectionDetails?username=test&volume=test
 
 #### Output
 
-```
+```json
 [
   {
     "id": 1,
@@ -50,7 +50,8 @@ http://localhost:8080/otcookbook/getConnectionDetails?username=test&volume=test
     "connectionString": "test",
     "extendedProperties": "test"
   }
-]```
+]
+```
 
 ## Deployment
 
