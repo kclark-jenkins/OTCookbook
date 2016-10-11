@@ -1,3 +1,4 @@
+[![Analytics](https://ga-beacon.appspot.com/UA-67485661-3/github/otcookbook/home)](https://github.com/igrigorik/ga-beacon)
 ## Synopsis
 
 This is a spring boot application built to hold a growing collection of servlets I use with the iHub.
