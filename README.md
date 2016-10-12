@@ -4,6 +4,8 @@ This is a spring boot application built to hold a growing collection of servlets
 
 [![Analytics](https://ga-beacon.appspot.com/UA-67485661-3/github/otcookbook/home)](https://github.com/igrigorik/ga-beacon)
 
+[Download](https://github.com/kclark-jenkins/OTCookbook/releases)
+
 [Synopsis](#synopsis)
 
 [Screenshots](#screenshots)
