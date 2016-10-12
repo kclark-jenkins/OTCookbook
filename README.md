@@ -1,6 +1,21 @@
 [Synopsis](#synopsis)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-67485661-3/github/otcookbook/home)](https://github.com/igrigorik/ga-beacon)
+[Screenshots](#screenshots)
+
+[Installation](#installation)
+
+[Usage](#usage)
+
+[Endpoints](#endpoints)
+
+[Deployment](#deployment)
+
+[BIRT](#birt)
+
+[Contributors](#contributors)
+
+[License](#license)
+
 ## [Synopsis](#synopsis)
 
 This is a spring boot application built to hold a growing collection of servlets I use with the iHub.
@@ -11,15 +26,15 @@ This is a spring boot application built to hold a growing collection of servlets
 ![alt tag](https://github.com/kclark-jenkins/OTCookbook/blob/master/Screenshots/swag3.png)
 ![alt tag](https://github.com/kclark-jenkins/OTCookbook/blob/master/Screenshots/swag4.png)
 
-## Installation
+## [Installation](#installation)
 
 java -jar -Dserver.port=8080 OTCookbook-0.0.1-SNAPSHOT.jar
 
-## Usage
+## [Usage](#usage)
 
 `http://localhost:8080/otcookbook`
 
-## Endpoints currently implemented
+## [Endpoints](#endpoints)
 
 ### /saveConnectionDetails
 
@@ -58,7 +73,7 @@ java -jar -Dserver.port=8080 OTCookbook-0.0.1-SNAPSHOT.jar
 ]
 ```
 
-## Deployment
+## [Deployment](#deployment)
 
 When compiled to a WAR, this will deploy fine to Tomcat 7.  If you would like to use this as a web service from inside of the iHub follow the following steps.
 
@@ -91,7 +106,7 @@ When compiled to a WAR, this will deploy fine to Tomcat 7.  If you would like to
 
 7. Open a browser and navigate to http://localhost:8700/otcookbook
 
-## Using in BIRT
+## [BIRT](#birt)
 BIRT uses the rhino engine allowing you to use both Java and JavaScript when writing script for your report so there are several ways to call a RESTful service.  I wrote a simple REST Client using java.io.  
 
 1. Download DynamicConnections.jar
@@ -107,10 +122,10 @@ JSON.parse(new Packages.org.krisbox.cookbook.restclient.DynamicConnections().get
 
 [Download DynamicConnections.jar](https://github.com/kclark-jenkins/OTCookbook/releases)
 
-## Contributors
+## [Contributors](#contributors)
 
 Kristopher Clark
 
-## License
+## [License](#license)
 
 [MIT License](https://github.com/kclark-jenkins/OTCookbook/blob/master/LICENSE)
