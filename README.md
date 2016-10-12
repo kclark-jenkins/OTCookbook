@@ -1,3 +1,5 @@
+[![Analytics](https://ga-beacon.appspot.com/UA-67485661-3/github/otcookbook/home)](https://github.com/igrigorik/ga-beacon)
+
 [Synopsis](#synopsis)
 
 [Screenshots](#screenshots)
