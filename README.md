@@ -103,7 +103,7 @@ BIRT uses the rhino engine allowing you to use both Java and JavaScript when wri
 JSON.parse(new Packages.org.krisbox.cookbook.restclient.DynamicConnections().getConnectionDetails("http://localhost:8700/otcookbook/getConnectionDetails?username=anonymous&volume=Default%20Volume"))[0].extendedProperties.password;
 ```
 
-[Download DynamicConnections.jar](releases/download/v0.0.2a/DynamicConnections.jar)
+[Download DynamicConnections.jar](https://github.com/kclark-jenkins/OTCookbook/releases)
 
 ## Contributors
 
