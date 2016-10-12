@@ -2,7 +2,11 @@ package org.krisbox.cookbook.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.krisbox.cookbook.models.ConnectionDetails;
@@ -23,9 +27,11 @@ public class GetConnectionDetailsController {
 		
 		List<ConnectionDetails> allConnections = new ArrayList<ConnectionDetails>();
 		for (ConnectionDetails details : connRepo.findByUsernameAndVolume(username, volume)) {
+			//details.setExtendedProperties(details.getExtendedProperties().replaceAll("\\\'", ""));
+			//details.setExtendedProperties();
 			allConnections.add(details);
 		}
-		System.out.println("**********" + allConnections.size());
+		
         return allConnections;
 		//return allConnections.get(allConnections.size()-1);
     }

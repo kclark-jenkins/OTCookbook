@@ -2,10 +2,17 @@ package org.krisbox.cookbook.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.krisbox.cookbook.models.ConnectionDetails;
 import org.krisbox.cookbook.models.ConnectionDetailsDao;
+import org.krisbox.cookbook.models.Property;
 import org.krisbox.cookbook.models.results.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
