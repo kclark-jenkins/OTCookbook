@@ -23,7 +23,7 @@ java -jar -Dserver.port=8080 OTCookbook-0.0.1-SNAPSHOT.jar
 
 #### Usage
 
-`http://localhost:8080/otcookbook/saveConnectionDetails?username=test&volume=test&connectionString=test&extendedProperties=test`
+`http://localhost:8700/otcookbook/saveConnectionDetails?username=delegate&volume=Default%20Volume&connectionString=jdbc%3Aclassicmodels%3Asampledb&extendedProperties=%7B%22password%22%3A%22%22%2C%22username%22%3A%22Classic%20Models%22%7D`
 
 #### Output
 
@@ -38,18 +38,20 @@ java -jar -Dserver.port=8080 OTCookbook-0.0.1-SNAPSHOT.jar
 
 #### Usage
 
-`http://localhost:8080/otcookbook/getConnectionDetails?username=test&volume=test`
+`http://localhost:8700/otcookbook/getConnectionDetails?username=delegate&volume=Default%20Volume`
 
 #### Output
 
-```json
-[
+```json[
   {
     "id": 1,
-    "username": "test",
-    "volume": "test",
-    "connectionString": "test",
-    "extendedProperties": "test"
+    "username": "delegate",
+    "volume": "Default Volume",
+    "connectionString": "jdbc:classicmodels:sampledb",
+    "extendedProperties": {
+      "password": "",
+      "username": "Classic Models"
+    }
   }
 ]
 ```
