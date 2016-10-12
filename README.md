@@ -89,6 +89,20 @@ When compiled to a WAR, this will deploy fine to Tomcat 7.  If you would like to
 
 7. Open a browser and navigate to http://localhost:8700/otcookbook
 
+## Using in BIRT
+BIRT uses the rhino engine allowing you to use both Java and JavaScript when writing script for your report so there are several ways to call a RESTful service.  I wrote a simple REST Client using java.io.  
+
+1. Download DynamicConnections.jar
+2. Place DynamicConnection.jar in the root of your BIRT Project
+3. Go to the properties editor > Resources > Jar Files > Add File...
+4. Slect DynamicConnections.jar it should be in the project root.
+5. Either publish DynamicConnections.jar as a resource from the designer or upload it manually to the iHub to "Resources"
+6. You can now use the following example code.  For my use, I placed it in a parameter
+
+```
+JSON.parse(new Packages.org.krisbox.cookbook.restclient.DynamicConnections().getConnectionDetails("http://localhost:8700/otcookbook/getConnectionDetails?username=anonymous&volume=Default%20Volume"))[0].extendedProperties.password;
+```
+
 ## Contributors
 
 Kristopher Clark
